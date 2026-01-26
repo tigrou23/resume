@@ -4,3 +4,11 @@ resume.pdf
 resume.aux
 resume.log
 resume.out
+resume.fls
+resume.fdb_latexmk
+fr/resume_fr.aux
+fr/resume_fr.fdb_latexmk
+fr/resume_fr.fls
+fr/resume_fr.log
+fr/resume_fr.out
+fr/style.cls
