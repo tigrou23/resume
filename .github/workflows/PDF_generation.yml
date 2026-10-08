@@ -16,14 +16,19 @@ jobs:
           packages: >
             l3build latex latex-bin luatex latex-bin-dev parskip kvoptions ltxcmds etoolbox collection-latexextra scheme-basic hyperref ebgaramond
 
-      - name: Build examples
-        run: pdflatex -interaction=nonstopmode -halt-on-error resume.tex
+      - name: Build English and French resumes
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error resume.tex
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=fr fr/resume_fr.tex
 
       - name: Create index.html
         run: mkdir public && echo "<!DOCTYPE html><html lang='fr'><head><meta charset='UTF-8'><link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5766/5766858.png"><script type='text/javascript'>window.location.href='./resume.pdf'</script><title>Redirection vers le PDF</title></head></html>" > public/index.html
 
       - name: Move PDFs
-        run: mv resume.pdf public
+        run: |
+          mv resume.pdf public
+          mkdir -p public/fr
+          cp fr/resume_fr.pdf public/fr/resume_fr.pdf
 
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3.8.0

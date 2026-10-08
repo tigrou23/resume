@@ -7,7 +7,8 @@
 ]{style} % Use the style class
 
 \usepackage{ebgaramond}
-\usepackage{hyperref} % Use the EB Garamond font
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
 
 %------------------------------------------------
 
@@ -29,38 +30,41 @@
 
     \begin{rSection}{Expérience professionnelle}
 
-        \begin{rSubsection}{Airbus Defence \& Space}{Février 2026 - Mai 2026}{Stage temps plein – Ingénieur cybersécurité (programme A400M)}{Getafe, Espagne}
-            \item Mission de 4 mois en cybersécurité pour soutenir les opérations de maintenance A400M sur le site de production de Getafe (Espagne).
-            \item PKI, cycle de vie des certificats et authentification par carte à puce (SmartCard) au sein d’un domaine Windows Active Directory.
-            \item Conception / Maintenance de VPN IPSec et configuration NAT sur des équipements FortiGate afin de sécuriser et interconnecter les systèmes de maintenance.
-            \item OpenShift sur VMware et automatisation avec Ansible (dont configuration SSH) pour standardiser les déploiements et procédures d’exploitation.
+        \begin{rSubsection}{Airbus Defence \& Space}{Août 2026 - Présent}{CDI - Ingénieur DevOps et déploiement}{France}
+            \item Déploiement et intégration de plateformes de communications critiques AGNET (MCX) sur des environnements Linux virtualisés.
+            \item Provisionnement d’infrastructures VMware avec Terraform ; automatisation de l’installation et de la configuration avec Ansible et des scripts shell.
+            \item Configuration des connexions et services réseau, validation des déploiements et diagnostic d’incidents système et applicatifs.
+            \item Documentation et fiabilisation des procédures de déploiement pour rendre l’installation et la maintenance reproductibles.
         \end{rSubsection}
 
-        \begin{rSubsection}{Airbus Defence \& Space}{Août 2023 - Présent}{Alternance – Ingénieur logiciel}{Paris, France}
-            \item Amélioration et évolution d’un plugin d’ingénierie système (MBSE) sur le logiciel CAMEO, développé en Java et utilisé par de nombreux ingénieurs d’Airbus (+500).
-            \item Mise en place et pilotage de la chaîne d’Intégration/Déploiement Continus (CI/CD) du projet, avec des pratiques DevOps : Jenkins, Docker, Git, Jira \& Confluence.
-            \item Optimisation du système MBSE pour l’aligner précisément sur les besoins des architectes et faciliter son adoption.
+        \begin{rSubsection}{Airbus Defence \& Space}{Février 2026 - Mai 2026}{Stage temps plein - Ingénieur cybersécurité (programme A400M)}{Getafe, Espagne}
+            \item PKI, cycle de vie des certificats et authentification SmartCard sous Active Directory pour les systèmes de maintenance A400M.
+            \item Configuration et dépannage de VPN IPSec et de règles NAT sur FortiGate pour interconnecter les systèmes.
+            \item OpenShift sur VMware et automatisation des déploiements et de la configuration SSH avec Ansible.
         \end{rSubsection}
 
-%------------------------------------------------
-
-        \begin{rSubsection}{Kardham Digital}{Septembre 2022 - Août 2023}{Alternance – Développeur, Assistant Chef de Projet Digital}{Paris, France}
-            \item Développement de solutions full-stack en Python, HTML, CSS, JavaScript, C\#, Java et Django REST API.
-            \item Réalisation de projets pour le pôle Recherche \& Développement (prévision de présence, développement IoT, optimisation d’espaces, analyse de données bâtimentaires).
-            \item Analyse de données avec SQL, Pandas, Streamlit et Elasticsearch afin de produire des statistiques de vie du bâtiment et des graphiques personnalisés pour les clients.
+        \begin{rSubsection}{Airbus Defence \& Space}{Août 2023 - Août 2026}{Alternance - Ingénieur logiciel}{Paris, France}
+            \item Développement en Java d’un plugin MBSE pour CAMEO utilisé par plus de 500 ingénieurs Airbus, adapté aux besoins des architectes système.
+            \item Mise en place et maintenance de la chaîne CI/CD avec Jenkins, Docker et Git ; utilisation de Jira et Confluence.
         \end{rSubsection}
 
 %------------------------------------------------
 
-        \begin{rSubsection}{Kardham Digital}{Juin 2022 - Août 2022}{Stage – Assistant Chef de Projet Digital}{Paris, France}
-            \item Participation au suivi (BUILD \& RUN) de projets informatiques (gestion de projet avec SCRUM).
-            \item Déplacements sur sites clients partout en France pour organiser le déploiement d’infrastructures IT : installation de routeurs, pare-feux, switches, capteurs et éclairages connectés.
-            \item Administration de systèmes et hébergement de sites/projets web via Apache2 sur serveurs Debian.
+        \begin{rSubsection}{Kardham Digital}{Septembre 2022 - Août 2023}{Alternance - Développeur, assistant chef de projet digital}{Paris, France}
+            \item Développement full-stack pour la R\&D : prévision de présence, IoT et optimisation d’espaces avec Python, Django REST, JavaScript, C\# et Java.
+            \item Analyse de données bâtimentaires avec SQL, Pandas, Streamlit et Elasticsearch ; rapports et visualisations clients.
         \end{rSubsection}
 
 %------------------------------------------------
 
-        \begin{rSubsection}{Université Paris Cité}{Octobre 2022 - Présent}{CDD – Tuteur étudiant}{Paris, France}
+        \begin{rSubsection}{Kardham Digital}{Juin 2022 - Août 2022}{Stage - Assistant chef de projet digital}{Paris, France}
+            \item Suivi de projets IT avec Scrum et déploiement sur sites clients de routeurs, pare-feux, switches et objets connectés.
+            \item Administration de serveurs Debian et hébergement d’applications web avec Apache2.
+        \end{rSubsection}
+
+%------------------------------------------------
+
+        \begin{rSubsection}{Université Paris Cité}{Octobre 2022 - Présent}{CDD - Tuteur étudiant}{Paris, France}
             \item Cours hebdomadaires et tutorat pour la section handicap de l’université.
         \end{rSubsection}
 
@@ -73,13 +77,11 @@
     \begin{rSection}{Formation}
 
         \textbf{Université de Technologie de Compiègne (UTC) - Sorbonne} \hfill \textit{Juin 2026} \\
-        Diplôme d’ingénieur en génie logiciel \\
-        Moyenne générale : 5/5 \\
-        Spécialisation en POO, conception logicielle, algorithmique, structures de données, recherche opérationnelle \& optimisation combinatoire
+        Diplôme d’ingénieur en génie logiciel, moyenne générale : 5/5 \\
+        POO, conception logicielle, algorithmique, structures de données, recherche opérationnelle et optimisation combinatoire
 
         \textbf{Université Paris Cité} \hfill \textit{Juin 2023} \\
-        DUT Informatique (diplôme universitaire de technologie) \\
-        Major de promotion
+        DUT Informatique (diplôme universitaire de technologie), major de promotion
 
     \end{rSection}
 
@@ -89,12 +91,13 @@
 
     \begin{rSection}{Compétences techniques}
 
-        \begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-            Langages de programmation & Java, Swift, Objective-C, C\#, C, C++, Python, JS, HTML, CSS, VB .NET \\
-            Systèmes & GNU/Linux, notions de domaine Windows, environnements serveurs, scripting shell, Ansible (SSH) \\
-            Cybersécurité & PKI/Certificats/SmartCards, IPSec/FortiGate, durcissement, IAM, crypto (A400M) \\
-            Outils & Git, Docker, Jenkins, OpenShift, VMware, Ansible, Jira, Confluence, Vim \\
-        \end{tabular}
+        \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{3ex}} X @{}}
+            DevOps et infrastructure & Terraform, Ansible, GNU/Linux, scripts shell, VMware/vCenter, Docker, OpenShift \\
+            Déploiement et CI/CD & AGNET / MCX, Git, Jenkins, configuration réseau, diagnostic d’incidents \\
+            Cybersécurité & PKI, certificats, SmartCards, Active Directory, IPSec, FortiGate, durcissement, IAM \\
+            Programmation & Java, Python, C\#, C, C++, Swift, Objective-C, JavaScript, HTML, CSS, VB .NET \\
+            Données et collaboration & SQL, Pandas, Streamlit, Elasticsearch, Jira, Confluence \\
+        \end{tabularx}
 
     \end{rSection}
 

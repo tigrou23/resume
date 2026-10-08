@@ -26,10 +26,11 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
+    a4paper,
 	top=0.4in, % Top margin
 	bottom=0.4in, % Bottom margin
-	left=0.75in, % Left margin
-	right=0.75in, % Right margin
+	left=0.6in, % Left margin
+	right=0.6in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -72,18 +73,16 @@
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-		\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
-		\bigskip\break % Vertical whitespace below name
+		\centering{\MakeUppercase{\huge\bfseries\name}}\par % Style and output the user's name
 	\endgroup
+	\bigskip % Vertical whitespace below name
 }
 
 %----------------------------------------------------------------------------------------
 %	OUTPUT THE NAME & ADDRESS LINES AUTOMATICALLY
 %----------------------------------------------------------------------------------------
 
-\let\ori@document=\document % Store the original \document command
-\renewcommand{\document}{
-	\ori@document  % Output the original \document command but add to it below
+\AtBeginDocument{
 	\printname % Output the user's name
 	\@ifundefined{@addressone}{}{\printaddress{\@addressone}} % Output the first address if specified
 	\@ifundefined{@addresstwo}{}{\printaddress{\@addresstwo}} % Output the second address if specified
@@ -96,9 +95,9 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
-	\medskip % Vertical whitespace
+	\smallskip % Vertical whitespace
 	\MakeUppercase{\textbf{#1}} % Section title
-	\medskip % Vertical whitespace
+	\smallskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
 		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
@@ -123,5 +122,5 @@
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
+	\vspace{0.2em} % Vertical whitespace after the end of the list
 }
